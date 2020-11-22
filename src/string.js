@@ -225,6 +225,6 @@ const string=`/*你看，我是这样画一个皮卡丘的*/
 .thunder {
   display: inline;
 }
-/*画完啦，摸摸它的鼻子看它放电吧~*/`
+/*画完啦，摸摸它看它放电吧~*/`
 
 export default string;
