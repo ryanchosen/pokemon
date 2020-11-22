@@ -7,7 +7,8 @@ demo.innerHTML = substr;
 style.innerHTML = substr;
 // 定时器函数
 let fn = () => {
-  n === string.length && clearInterval(timer);
+  console.log(n === string.length)
+  n === string.length && clearInterval(id);
   n += 1;
   // 每次从string中追加一个字符到substr里，如果遇到空格就追加转义字符，如果遇到换行就追加<br>
   if (
