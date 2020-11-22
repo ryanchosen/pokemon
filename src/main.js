@@ -7,9 +7,12 @@ demo.innerHTML = substr;
 style.innerHTML = substr;
 // 定时器函数
 let fn = () => {
-  console.log(n === string.length)
-  n === string.length && clearInterval(id);
-  n += 1;
+  console.log(n,string.length)
+  if(n === string.length){
+    clearInterval(id);
+    return ;
+  }
+  n<string.length && (n=n+1);
   // 每次从string中追加一个字符到substr里，如果遇到空格就追加转义字符，如果遇到换行就追加<br>
   if (
     string
@@ -47,16 +50,21 @@ let fn = () => {
 
 let v = 100; // 设置速率
 const play = () => setInterval(fn, v);
-const stop = () => clearInterval(id);
+const stop = () => {
+  clearInterval(id); // 仅仅是把定时器的功能停止了，但不会将id置空
+  id=null; // 将id置空是为了布尔判断
+}
 
 let id = play(); // 一进页面运行定时器
 
 // 只要代码重复了就丑，‘优化’一下代码，其实就是让他们看着好看些
 btnPause.onclick = () => {
   stop();
+  console.log(id);
 };
 btnPlay.onclick = () => {
-  id = play();
+  console.log(id);
+  if(!id){id = play();}
 };
 btnSlow.onclick = () => {
   v = 100;
