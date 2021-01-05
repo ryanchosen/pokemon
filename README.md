@@ -1,7 +1,8 @@
-# 绘制一只解构风格的皮卡丘
 ![pikachu.gif](https://i.loli.net/2021/01/05/AuXzraMPF4TcOKN.gif)
 # 在线预览
+- ![42_259_99e6be0de62fee6b3bd735ac2070c7ca_d293766769c876c3e22301f1e92f18c3.png](https://i.loli.net/2021/01/06/bBCv5DHIUm7uoVi.png)
 
+- https://ryanchosen.github.io/pokemon/dist/
 # 实现思路
 - 先保证 页面结构 和 样式 能满足静态显示一只皮卡丘
 - 把完成的css字符串放入 `string.js`
